@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-[About]("./about")
+[About](about)
 
 You can use the [editor on GitHub](https://github.com/zuoyouTU/zuoyoutu.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
