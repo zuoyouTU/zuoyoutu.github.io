@@ -1,0 +1,102 @@
+{
+  "site": {
+    "main_title": "Cequn Yang | C++ Desktop Software Engineer Resume | Qt/C++ | Germany",
+    "ats_title": "Cequn Yang | ATS Resume | C++ Desktop Software Engineer | Germany",
+    "favicon": "favicon.ico",
+    "pdf_filename": "cequnyang_cpp.pdf",
+    "ats_pdf_filename": "cequnyang_cpp_ats.pdf"
+  },
+  "person": {
+    "name": "Cequn Yang",
+    "email": "cequnyang@gmail.com",
+    "relocation": "Open to relocation to Germany",
+    "languages": "Chinese (Native) | English (B2) | German (A2)",
+    "profiles": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/zuoyouTU/",
+        "display": "github.com/zuoyouTU/"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/cequn-yang/",
+        "display": "linkedin.com/in/cequn-yang/"
+      }
+    ]
+  },
+  "summary": "C++ software engineer with 8 years of experience in Windows desktop applications, client products, diagnostics tools, and SDK integration, with work spanning large-scale e-commerce workflows and UAV monitoring platforms, plus growing Qt/QML and Linux exposure for cross-platform roles.",
+  "education": [
+    {
+      "organization": "Jilin University",
+      "url": "https://en.jlu.edu.cn/",
+      "dates": "Sept 2013 - Jun 2017",
+      "subtitle": "Bachelor of Engineering in Information Engineering",
+      "note": "Recognized degree in Germany (ANABIN H+)."
+    }
+  ],
+  "skills": [
+    {
+      "label": "Programming Languages",
+      "value": "C++17/20, Python, Lua, JavaScript"
+    },
+    {
+      "label": "Desktop and UI",
+      "value": "Windows Desktop Development, MFC, duilib, Qt/QML (entry-level)"
+    },
+    {
+      "label": "Platforms",
+      "value": "Windows, Linux"
+    },
+    {
+      "label": "Core Strengths",
+      "value": "Desktop Applications, Client Architecture, SDK Integration, Diagnostics Tooling, System Integration, Troubleshooting"
+    }
+  ],
+  "experience": [
+    {
+      "organization": "Pinduoduo",
+      "url": "https://pddholdings.com/",
+      "dates": "Mar 2020 - May 2025",
+      "role": "PC Software Developer",
+      "bullets": [
+        {
+          "label": "Development",
+          "text": "Developed and maintained the Windows-based IM chat tool for merchants and consumers using C++17/20 and duilib in a product environment serving millions of merchant devices."
+        },
+        {
+          "label": "Ownership",
+          "text": "Implemented and maintained core client workflows including message sending, synchronization, retraction, message history lookup, reminders, quick reply, and shortcut-based interactions, while supporting daily production troubleshooting."
+        },
+        {
+          "label": "Integration",
+          "text": "Led the replacement of a core client-side data parsing library and maintained Windows-side security, risk-control, and device information collection tooling with lower-level SDK integration."
+        }
+      ]
+    },
+    {
+      "organization": "Hikrobot",
+      "url": "https://www.hikrobotics.com/en/",
+      "dates": "Jul 2017 - Feb 2020",
+      "role": "PC Software Developer",
+      "bullets": [
+        {
+          "label": "Development",
+          "text": "Developed the desktop client of a UAV monitoring platform from 0 to 1 using C++ and MFC, covering modules, UI improvements, and debugging workflows."
+        },
+        {
+          "label": "Tooling",
+          "text": "Built engineering and production tools with C++, Lua, Python, MFC, and internal SDKs for transmission speed measurement, factory information writing, device status simulation, and automated fault and log troubleshooting."
+        },
+        {
+          "label": "Platform Extension",
+          "text": "Led development of an OCX plugin for an IE-based drone management platform to support real-time video and image display and key-object identification."
+        }
+      ]
+    }
+  ],
+  "highlights": [
+    "8 years of C++ desktop and client-side software development",
+    "Experience in high-scale merchant-facing software and device-oriented desktop platforms",
+    "Strong fit for C++ Software Engineer, Desktop Software Engineer, Qt/C++ Developer, and Device-Platform Engineer roles"
+  ]
+}
