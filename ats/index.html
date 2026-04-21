@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cequn Yang | ATS Resume | C++ Desktop Software Engineer | Germany</title>
-  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <style>
     :root {
       --page-width: 210mm;
-      --ink: #111111;
-      --muted: #333333;
+      --ink: #161616;
+      --muted: #4f4f4f;
       --rule: #222222;
     }
 
@@ -23,65 +23,147 @@
       background: #ffffff;
       color: var(--ink);
       font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.35;
+      line-height: 1.24;
     }
 
     .page {
       width: min(var(--page-width), 100%);
       margin: 0 auto;
-      padding: 16mm;
+      padding: 12mm 14mm 12mm;
     }
 
     .page-actions {
-      margin-bottom: 10px;
+      text-align: right;
+      margin-bottom: 6px;
     }
 
     .action-link {
       color: var(--muted);
       text-decoration: none;
-      font-size: 12px;
-      letter-spacing: 0.05em;
+      font-size: 10.5px;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
-      border-bottom: 1px solid rgba(51, 51, 51, 0.35);
+      border-bottom: 1px solid rgba(79, 79, 79, 0.35);
+    }
+
+    .action-link:hover,
+    .action-link:focus-visible {
+      color: var(--ink);
+      border-bottom-color: currentColor;
+    }
+
+    .masthead {
+      text-align: center;
     }
 
     h1 {
-      margin: 0 0 8px;
-      font-size: 28px;
-      line-height: 1.1;
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.05;
     }
 
-    .contact {
-      font-size: 12px;
+    .name-copy {
+      appearance: none;
+      border: 0;
+      background: none;
+      padding: 0;
+      margin: 0;
+      font: inherit;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    .name-copy:hover,
+    .name-copy:focus-visible {
       color: var(--muted);
     }
 
-    .contact div + div {
-      margin-top: 2px;
+    .contact-row,
+    .meta-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 4px 8px;
+      color: var(--muted);
     }
 
-    .contact a {
+    .contact-row {
+      margin-top: 8px;
+      font-size: 12px;
+    }
+
+    .meta-row {
+      margin-top: 3px;
+      font-size: 11.5px;
+    }
+
+    .contact-row a,
+    .meta-row a {
       color: inherit;
       text-decoration: none;
     }
 
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .contact-icon {
+      width: 11px;
+      height: 11px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      transform: translateY(0.5px);
+    }
+
+    .contact-icon svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .sep {
+      color: #8a8a8a;
+    }
+
     .summary {
-      margin: 14px 0 12px;
-      font-size: 12.5px;
+      margin: 10px 0 14px;
+      padding-bottom: 10px;
+      font-size: 12.1px;
+    }
+
+    .summary::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin: 10px auto 0;
+      background: var(--rule);
+      opacity: 0.28;
     }
 
     section {
-      margin: 0 0 12px;
+      margin: 0 0 10px;
     }
 
     h2 {
       margin: 0 0 6px;
       font-size: 12px;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
-      font-weight: 700;
+      font-variant: small-caps;
+      font-weight: 400;
       border-bottom: 1px solid var(--rule);
-      padding-bottom: 3px;
+      padding-bottom: 2px;
+    }
+
+    .section-initial {
+      font-size: 14px;
+      font-variant: normal;
     }
 
     .entry {
@@ -93,31 +175,55 @@
       justify-content: space-between;
       gap: 12px;
       align-items: baseline;
-      font-size: 12.8px;
+    }
+
+    .entry-title {
+      font-size: 13.8px;
       font-weight: 700;
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    .entry-date {
+      font-size: 11.8px;
+      color: var(--muted);
+      font-style: italic;
+      margin-left: auto;
+      text-align: right;
+      white-space: nowrap;
+      flex: 0 0 auto;
     }
 
     .entry-sub {
       margin-top: 1px;
-      font-size: 12px;
+      font-size: 12.3px;
       color: var(--muted);
       font-style: italic;
     }
 
     .entry-note {
-      margin-top: 3px;
-      font-size: 11.5px;
-      color: var(--muted);
+      margin: 4px 0 0 12px;
+      font-size: 11.7px;
+      line-height: 1.24;
+    }
+
+    .skill-lines {
+      margin-top: 5px;
+    }
+
+    .skill-lines p {
+      margin: 0 0 4px;
+      font-size: 12.1px;
     }
 
     ul {
-      margin: 5px 0 0;
-      padding-left: 18px;
-      font-size: 12px;
+      margin: 4px 0 0;
+      padding-left: 26px;
+      font-size: 12.1px;
     }
 
     li + li {
-      margin-top: 4px;
+      margin-top: 3px;
     }
 
     .label {
@@ -142,11 +248,17 @@
 
     @media (max-width: 760px) {
       .page {
-        padding: 18px 16px;
+        padding: 18px 14px;
       }
 
-      .entry-head {
+      h1 {
+        font-size: 30px;
+      }
+
+      .entry-date {
         display: block;
+        margin-top: 2px;
+        white-space: normal;
       }
     }
   </style>
@@ -157,23 +269,20 @@
       <a class="action-link" href="resume/index.html" target="_blank" rel="noopener noreferrer">View ATS PDF</a>
     </div>
 
-    <h1>Cequn Yang</h1>
+    <header class="masthead">
+      <h1><button class="name-copy" type="button" data-copy-text="Cequn Yang" aria-label="Copy name to clipboard" title="Click to copy">Cequn Yang</button></h1>
+      <div class="contact-row"><span class="contact-item"><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="3" width="13" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2.5 4.5L8 8.5L13.5 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><a href="mailto:cequnyang@gmail.com" target="_blank" rel="noopener noreferrer">cequnyang@gmail.com</a></span> <span class="sep" aria-hidden="true">|</span> <span class="contact-item"><span class="contact-icon" aria-hidden="true"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"/></svg></span><a href="https://github.com/cequnyang/" target="_blank" rel="noopener noreferrer">github.com/cequnyang/</a></span> <span class="sep" aria-hidden="true">|</span> <span class="contact-item"><span class="contact-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" focusable="false" aria-hidden="true"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg></span><a href="https://www.linkedin.com/in/cequn-yang/" target="_blank" rel="noopener noreferrer">linkedin.com/in/cequn-yang/</a></span></div>
+      <div class="meta-row">Open to relocation to Germany <span class="sep" aria-hidden="true">|</span> Chinese (Native) | English (B2) | German (A2)</div>
+    </header>
 
-    <div class="contact">
-      <div><a href="mailto:cequnyang@gmail.com">cequnyang@gmail.com</a></div>
-      <div>GitHub: <a href="https://github.com/zuoyouTU/" target="_blank" rel="noopener noreferrer">github.com/zuoyouTU/</a> | LinkedIn: <a href="https://www.linkedin.com/in/cequn-yang/" target="_blank" rel="noopener noreferrer">linkedin.com/in/cequn-yang/</a></div>
-      <div>Open to relocation to Germany</div>
-      <div>Chinese (Native) | English (B2) | German (A2)</div>
-    </div>
-
-    <div class="summary">C++ software engineer with 8 years of experience in Windows desktop applications, client products, diagnostics tools, and SDK integration, with work spanning large-scale e-commerce workflows and UAV monitoring platforms, plus growing Qt/QML and Linux exposure for cross-platform roles.</div>
+    <div class="summary">C++ software engineer with 8 years of experience in desktop client development, diagnostics tooling, and SDK integration, with work spanning large scale e-commerce workflows and UAV monitoring platforms. Hands-on background in MFC, duilib, and ActiveX plugin development, with growing Qt/QML and Linux exposure for cross-platform roles.</div>
 
     <section>
-      <h2>Education</h2>
+      <h2><span class="section-initial">E</span>DUCATION</h2>
             <div class="entry">
         <div class="entry-head">
-          <div><a href="https://en.jlu.edu.cn/" target="_blank" rel="noopener noreferrer">Jilin University</a></div>
-          <div>Sept 2013 - Jun 2017</div>
+          <div class="entry-title"><a href="https://en.jlu.edu.cn/" target="_blank" rel="noopener noreferrer">Jilin University</a></div>
+          <div class="entry-date">Sept 2013 - Jun 2017</div>
         </div>
         <div class="entry-sub">Bachelor of Engineering in Information Engineering</div>
         <div class="entry-note">Recognized degree in Germany (ANABIN H+).</div>
@@ -181,51 +290,92 @@
     </section>
 
     <section>
-      <h2>Skills</h2>
-      <ul>
-                <li><span class="label">Programming Languages:</span> C++17/20, Python, Lua, JavaScript</li>
-        <li><span class="label">Desktop and UI:</span> Windows Desktop Development, MFC, duilib, Qt/QML (entry-level)</li>
-        <li><span class="label">Platforms:</span> Windows, Linux</li>
-        <li><span class="label">Core Strengths:</span> Desktop Applications, Client Architecture, SDK Integration, Diagnostics Tooling, System Integration, Troubleshooting</li>
-      </ul>
+      <h2><span class="section-initial">S</span>KILLS</h2>
+      <div class="skill-lines">
+                <p><span class="label">Languages:</span> C++17/20, Python, Lua, JavaScript/jQuery, PHP, SQL</p>
+        <p><span class="label">Desktop and UI:</span> Desktop client development, Qt/QML, MFC, duilib (UI framework), OpenCV</p>
+        <p><span class="label">Systems and Tools:</span> SDK integration, diagnostics tooling, debugging, troubleshooting, Git, SVN, CI/CD, Linux</p>
+        <p><span class="label">Engineering Focus:</span> Desktop client development, client architecture, SDK integration, diagnostics tooling, system integration</p>
+      </div>
     </section>
 
     <section>
-      <h2>Professional Experience</h2>
+      <h2><span class="section-initial">E</span>XPERIENCE</h2>
             <div class="entry">
         <div class="entry-head">
-          <div><a href="https://pddholdings.com/" target="_blank" rel="noopener noreferrer">Pinduoduo</a></div>
-          <div>Mar 2020 - May 2025</div>
+          <div class="entry-title"><a href="https://pddholdings.com/" target="_blank" rel="noopener noreferrer">Pinduoduo</a></div>
+          <div class="entry-date">Mar 2020 - May 2025</div>
         </div>
-        <div class="entry-sub">PC Software Developer</div>
+        <div class="entry-sub">C++ Software Engineer</div>
         <ul>
-          <li><span class="label">Development:</span> Developed and maintained the Windows-based IM chat tool for merchants and consumers using C++17/20 and duilib in a product environment serving millions of merchant devices.</li>
-          <li><span class="label">Ownership:</span> Implemented and maintained core client workflows including message sending, synchronization, retraction, message history lookup, reminders, quick reply, and shortcut-based interactions, while supporting daily production troubleshooting.</li>
-          <li><span class="label">Integration:</span> Led the replacement of a core client-side data parsing library and maintained Windows-side security, risk-control, and device information collection tooling with lower-level SDK integration.</li>
+          <li><span class="label">Development:</span> Developed and maintained a Windows IM client for merchants and consumers using C++17/20 and duilib (Windows UI framework), covering UI behavior, message interaction, and ongoing client maintenance in a high usage e-commerce environment, and supporting product DAU growth from 1.2M in 2020 to 2.6M in 2025 and average daily usage growth from 4 to 6 hours.</li>
+          <li><span class="label">Ownership:</span> Owned multiple core Windows desktop client workflows, including message sending, synchronization, retraction, history lookup, reminders, quick reply, shortcut-driven interactions, and related features, while supporting daily production troubleshooting and issue analysis.</li>
+          <li><span class="label">Integration:</span> Led the replacement of several core client parsing libraries and maintained multiple Windows security, risk control, and device information tooling surfaces with lower level SDK integration.</li>
+          <li><span class="label">Scope:</span> Worked across UI logic, client business workflows, and lower level integrations in a mature desktop codebase used daily by merchants and consumers.</li>
         </ul>
       </div>
       <div class="entry">
         <div class="entry-head">
-          <div><a href="https://www.hikrobotics.com/en/" target="_blank" rel="noopener noreferrer">Hikrobot</a></div>
-          <div>Jul 2017 - Feb 2020</div>
+          <div class="entry-title"><a href="https://www.hikrobotics.com/en/" target="_blank" rel="noopener noreferrer">Hikrobot</a></div>
+          <div class="entry-date">Jul 2017 - Feb 2020</div>
         </div>
-        <div class="entry-sub">PC Software Developer</div>
+        <div class="entry-sub">C++ Software Engineer</div>
         <ul>
-          <li><span class="label">Development:</span> Developed the desktop client of a UAV monitoring platform from 0 to 1 using C++ and MFC, covering modules, UI improvements, and debugging workflows.</li>
-          <li><span class="label">Tooling:</span> Built engineering and production tools with C++, Lua, Python, MFC, and internal SDKs for transmission speed measurement, factory information writing, device status simulation, and automated fault and log troubleshooting.</li>
-          <li><span class="label">Platform Extension:</span> Led development of an OCX plugin for an IE-based drone management platform to support real-time video and image display and key-object identification.</li>
+          <li><span class="label">Development:</span> Developed the first OCX/ActiveX plugin for an IE-based UAV monitoring platform using C++ and MFC, contributing across plugin design, feature delivery, and release support; by late 2019, it had been deployed to 100+ institutions with support for real time video/image display and key object identification.</li>
+          <li><span class="label">Tooling:</span> Built 10+ engineering and production tools with C++, Lua, Python, MFC, and internal SDKs for transmission speed measurement, factory information writing, device status simulation, and automated fault/log troubleshooting in day-to-day engineering workflows.</li>
+          <li><span class="label">Support:</span> Worked across both product delivery and internal tooling, supporting rollout, testing, and troubleshooting for UAV monitoring devices and related workflows.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <div class="entry-title"><a href="https://aiqicha.baidu.com/detail/compinfo?pid=xlTM-TogKuTwPhhqWlssxM0*dlDcxr2pBwmd&amp;pd=aen&amp;from=ps&amp;query=%E4%B8%9C%E8%90%A5%E5%B8%82%E9%94%90%E8%81%9A%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8" target="_blank" rel="noopener noreferrer">Ruiju Information (Remote)</a></div>
+          <div class="entry-date">Feb 2016 - Jan 2017</div>
+        </div>
+        <div class="entry-sub">Full Stack Web Developer Intern</div>
+        <ul>
+          <li><span class="label">Delivery:</span> Built and delivered 3 corporate portal websites from scratch in a remote internship, using JavaScript/jQuery, CSS, PHP, and SQL across frontend, backend, and database layers, including page implementation, server-side logic, and content/data handling; within the first year after launch, the best performing site reached an average of 100+ daily active users.</li>
+          <li><span class="label">Ownership:</span> Owned the full delivery lifecycle across implementation, testing, iteration, and final handoff for multiple company website projects.</li>
+          <li><span class="label">Breadth:</span> Handled a broad scope in a small remote setup, spanning frontend styling, PHP backend changes, SQL data work, testing, and final delivery.</li>
         </ul>
       </div>
     </section>
 
-    <section>
-      <h2>Selected Highlights</h2>
-      <ul>
-                <li>8 years of C++ desktop and client-side software development</li>
-        <li>Experience in high-scale merchant-facing software and device-oriented desktop platforms</li>
-        <li>Strong fit for C++ Software Engineer, Desktop Software Engineer, Qt/C++ Developer, and Device-Platform Engineer roles</li>
-      </ul>
-    </section>
   </main>
+  <script>
+    (() => {
+      async function copyText(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+          return;
+        }
+
+        const field = document.createElement("textarea");
+        field.value = text;
+        field.setAttribute("readonly", "");
+        field.style.position = "fixed";
+        field.style.opacity = "0";
+        document.body.appendChild(field);
+        field.select();
+        document.execCommand("copy");
+        document.body.removeChild(field);
+      }
+
+      for (const button of document.querySelectorAll(".name-copy")) {
+        button.addEventListener("click", async () => {
+          const text = button.dataset.copyText || button.textContent || "";
+          const originalTitle = button.title;
+          try {
+            await copyText(text);
+            button.title = "Copied";
+          } catch (error) {
+            button.title = "Copy failed";
+          }
+          setTimeout(() => {
+            button.title = originalTitle;
+          }, 1200);
+        });
+      }
+    })();
+  </script>
 </body>
 </html>

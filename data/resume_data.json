@@ -2,7 +2,7 @@
   "site": {
     "main_title": "Cequn Yang | C++ Desktop Software Engineer Resume | Qt/C++ | Germany",
     "ats_title": "Cequn Yang | ATS Resume | C++ Desktop Software Engineer | Germany",
-    "favicon": "favicon.ico",
+    "favicon": "favicon.svg",
     "pdf_filename": "cequnyang_cpp.pdf",
     "ats_pdf_filename": "cequnyang_cpp_ats.pdf"
   },
@@ -14,8 +14,8 @@
     "profiles": [
       {
         "label": "GitHub",
-        "url": "https://github.com/zuoyouTU/",
-        "display": "github.com/zuoyouTU/"
+        "url": "https://github.com/cequnyang/",
+        "display": "github.com/cequnyang/"
       },
       {
         "label": "LinkedIn",
@@ -24,7 +24,7 @@
       }
     ]
   },
-  "summary": "C++ software engineer with 8 years of experience in Windows desktop applications, client products, diagnostics tools, and SDK integration, with work spanning large-scale e-commerce workflows and UAV monitoring platforms, plus growing Qt/QML and Linux exposure for cross-platform roles.",
+  "summary": "C++ software engineer with 8 years of experience in desktop client development, diagnostics tooling, and SDK integration, with work spanning large scale e-commerce workflows and UAV monitoring platforms. Hands-on background in MFC, duilib, and ActiveX plugin development, with growing Qt/QML and Linux exposure for cross-platform roles.",
   "education": [
     {
       "organization": "Jilin University",
@@ -36,20 +36,20 @@
   ],
   "skills": [
     {
-      "label": "Programming Languages",
-      "value": "C++17/20, Python, Lua, JavaScript"
+      "label": "Languages",
+      "value": "C++17/20, Python, Lua, JavaScript/jQuery, PHP, SQL"
     },
     {
       "label": "Desktop and UI",
-      "value": "Windows Desktop Development, MFC, duilib, Qt/QML (entry-level)"
+      "value": "Desktop client development, Qt/QML, MFC, duilib (UI framework), OpenCV"
     },
     {
-      "label": "Platforms",
-      "value": "Windows, Linux"
+      "label": "Systems and Tools",
+      "value": "SDK integration, diagnostics tooling, debugging, troubleshooting, Git, SVN, CI/CD, Linux"
     },
     {
-      "label": "Core Strengths",
-      "value": "Desktop Applications, Client Architecture, SDK Integration, Diagnostics Tooling, System Integration, Troubleshooting"
+      "label": "Engineering Focus",
+      "value": "Desktop client development, client architecture, SDK integration, diagnostics tooling, system integration"
     }
   ],
   "experience": [
@@ -57,19 +57,23 @@
       "organization": "Pinduoduo",
       "url": "https://pddholdings.com/",
       "dates": "Mar 2020 - May 2025",
-      "role": "PC Software Developer",
+      "role": "C++ Software Engineer",
       "bullets": [
         {
           "label": "Development",
-          "text": "Developed and maintained the Windows-based IM chat tool for merchants and consumers using C++17/20 and duilib in a product environment serving millions of merchant devices."
+          "text": "Developed and maintained a Windows IM client for merchants and consumers using C++17/20 and duilib (Windows UI framework), covering UI behavior, message interaction, and ongoing client maintenance in a high usage e-commerce environment, and supporting product DAU growth from 1.2M in 2020 to 2.6M in 2025 and average daily usage growth from 4 to 6 hours."
         },
         {
           "label": "Ownership",
-          "text": "Implemented and maintained core client workflows including message sending, synchronization, retraction, message history lookup, reminders, quick reply, and shortcut-based interactions, while supporting daily production troubleshooting."
+          "text": "Owned multiple core Windows desktop client workflows, including message sending, synchronization, retraction, history lookup, reminders, quick reply, shortcut-driven interactions, and related features, while supporting daily production troubleshooting and issue analysis."
         },
         {
           "label": "Integration",
-          "text": "Led the replacement of a core client-side data parsing library and maintained Windows-side security, risk-control, and device information collection tooling with lower-level SDK integration."
+          "text": "Led the replacement of several core client parsing libraries and maintained multiple Windows security, risk control, and device information tooling surfaces with lower level SDK integration."
+        },
+        {
+          "label": "Scope",
+          "text": "Worked across UI logic, client business workflows, and lower level integrations in a mature desktop codebase used daily by merchants and consumers."
         }
       ]
     },
@@ -77,26 +81,42 @@
       "organization": "Hikrobot",
       "url": "https://www.hikrobotics.com/en/",
       "dates": "Jul 2017 - Feb 2020",
-      "role": "PC Software Developer",
+      "role": "C++ Software Engineer",
       "bullets": [
         {
           "label": "Development",
-          "text": "Developed the desktop client of a UAV monitoring platform from 0 to 1 using C++ and MFC, covering modules, UI improvements, and debugging workflows."
+          "text": "Developed the first OCX/ActiveX plugin for an IE-based UAV monitoring platform using C++ and MFC, contributing across plugin design, feature delivery, and release support; by late 2019, it had been deployed to 100+ institutions with support for real time video/image display and key object identification."
         },
         {
           "label": "Tooling",
-          "text": "Built engineering and production tools with C++, Lua, Python, MFC, and internal SDKs for transmission speed measurement, factory information writing, device status simulation, and automated fault and log troubleshooting."
+          "text": "Built 10+ engineering and production tools with C++, Lua, Python, MFC, and internal SDKs for transmission speed measurement, factory information writing, device status simulation, and automated fault/log troubleshooting in day-to-day engineering workflows."
         },
         {
-          "label": "Platform Extension",
-          "text": "Led development of an OCX plugin for an IE-based drone management platform to support real-time video and image display and key-object identification."
+          "label": "Support",
+          "text": "Worked across both product delivery and internal tooling, supporting rollout, testing, and troubleshooting for UAV monitoring devices and related workflows."
+        }
+      ]
+    },
+    {
+      "organization": "Ruiju Information (Remote)",
+      "url": "https://aiqicha.baidu.com/detail/compinfo?pid=xlTM-TogKuTwPhhqWlssxM0*dlDcxr2pBwmd&pd=aen&from=ps&query=%E4%B8%9C%E8%90%A5%E5%B8%82%E9%94%90%E8%81%9A%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8",
+      "dates": "Feb 2016 - Jan 2017",
+      "role": "Full Stack Web Developer Intern",
+      "bullets": [
+        {
+          "label": "Delivery",
+          "text": "Built and delivered 3 corporate portal websites from scratch in a remote internship, using JavaScript/jQuery, CSS, PHP, and SQL across frontend, backend, and database layers, including page implementation, server-side logic, and content/data handling; within the first year after launch, the best performing site reached an average of 100+ daily active users."
+        },
+        {
+          "label": "Ownership",
+          "text": "Owned the full delivery lifecycle across implementation, testing, iteration, and final handoff for multiple company website projects."
+        },
+        {
+          "label": "Breadth",
+          "text": "Handled a broad scope in a small remote setup, spanning frontend styling, PHP backend changes, SQL data work, testing, and final delivery."
         }
       ]
     }
   ],
-  "highlights": [
-    "8 years of C++ desktop and client-side software development",
-    "Experience in high-scale merchant-facing software and device-oriented desktop platforms",
-    "Strong fit for C++ Software Engineer, Desktop Software Engineer, Qt/C++ Developer, and Device-Platform Engineer roles"
-  ]
+  "highlights": []
 }
